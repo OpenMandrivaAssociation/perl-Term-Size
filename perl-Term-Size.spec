@@ -3,7 +3,7 @@
 Summary:	Term::Size - Perl extension for retrieving terminal size
 Name:		perl-%{real_name}
 Version:	0.2
-Release: %mkrel 2
+Release: %mkrel 3
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
@@ -21,6 +21,8 @@ the size of the terminal (or window) on which a script is running.
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
+
+%check
 make test
 
 %install
